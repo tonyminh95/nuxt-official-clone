@@ -84,17 +84,6 @@
     <BaseCodeView class="mt-6">
       <template slot="file-name"> nuxt.config.js </template>
       <template slot="content">
-        <highlight-code lang="js">
-          {
-            modules: [
-              '@nuxtjs/axios',
-              '@nuxtjs/auth-next'
-            ],
-            auth: {
-              // Options
-            }
-          }
-        </highlight-code>
       </template>
     </BaseCodeView>
 
