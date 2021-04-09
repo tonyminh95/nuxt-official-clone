@@ -142,6 +142,11 @@
         additions to the <box-highlight>Context</box-highlight> interface.
       </div>
     </div>
+
+    <footer-link-github
+      class="mt-4"
+      link="https://github.com/nuxt-community/axios-module/edit/main/docs/content/en/setup.md"
+    />
   </div>
 </template>
 

@@ -48,7 +48,7 @@ export default {
 
     color: {
       type: String,
-      required: true,
+      default: 'black',
     },
   },
 }
