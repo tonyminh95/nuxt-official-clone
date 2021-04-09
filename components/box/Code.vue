@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-gray-700 p-3 rounded">
-    <div><slot name="header"></slot></div>
-    <div class="flex justify-between">
-      <div ref="content"><slot name="body"></slot></div>
-      <div class="flex items-end">
+  <div class="bg-gray-700 py-3 px-4 rounded mb-4">
+    <div class="text-right text-white"><slot name="header"></slot></div>
+    <div class="flex justify-between py-2">
+      <div ref="content"><slot></slot></div>
+      <div class="relative">
         <button
-          class="border border-white rounded px-2 py-1 text-white cursor-pointer hover:bg-white hover:bg-opacity-20 focus:outline-none"
+          class="-bottom-1 border border-white rounded px-2 py-1 text-white opacity-50 cursor-pointer hover:bg-white hover:bg-opacity-20 hover:opacity-100 focus:outline-none absolute right-0"
           @click.prevent="copyTestingCode"
         >
           COPY
