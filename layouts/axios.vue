@@ -1,7 +1,7 @@
 <template>
   <div>
     <base-alert />
-    <div class="px-8">
+    <div class="px-8 mt-8">
       <nuxt />
     </div>
     <footer-redirection

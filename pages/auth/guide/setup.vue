@@ -1,46 +1,21 @@
 <template>
   <div>
-    <h1 class="capitalize text-3xl">setup</h1>
+    <h1>Setup</h1>
 
-    <ul class="mt-5 text-lg text-green-500 underline list-disc list-inside">
-      <li class="py-2 cursor-pointer" @click="scrollTo('installation')">
-        Installation
-      </li>
+    <h2>Installation</h2>
 
-      <li class="py-2 cursor-pointer" @click="scrollTo('typescript')">
-        Using with TypeScript
-      </li>
-    </ul>
-
-    <div class="boder border-b mt-5"></div>
-
-    <h2 id="installation" class="capitalize text-xl mt-5">Installation</h2>
-
-    <TheNotice class="mt-6" color="blue">
+    <notification-inline type="information">
       Check the Nuxt.js documentation for more information about installing and
       using modules in Nuxt.js.
-    </TheNotice>
+    </notification-inline>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="mt-6">
+    <p>
       Add
-      <span class="py-1 px-2 border border-gray-300 rounded bg-gray-100"
-        >@nuxtjs/auth-next @nuxtjs/axios</span
-      >
+      <box-highlight>@nuxtjs/auth-next @nuxtjs/axios</box-highlight>
       dependencies to your project:
-    </div>
+    </p>
+
+    <box-tab></box-tab>
 
     <BaseTabs class="mt-6" :tabs="['yarn', 'npm']">
       <template slot="yarn">
@@ -83,17 +58,13 @@
 
     <BaseCodeView class="mt-6">
       <template slot="file-name"> nuxt.config.js </template>
-      <template slot="content">
-      </template>
+      <template slot="content"> </template>
     </BaseCodeView>
 
     <TheNotice class="mt-6" color="red">
       Check the Nuxt.js documentation for more information about installing and
       using modules in Nuxt.js.
     </TheNotice>
-
-
-
 
     <div class="boder border-b mt-5"></div>
 
@@ -115,6 +86,6 @@ export default {
     scrollTo(position) {
       this.$el.querySelector(`#${position}`).scrollIntoView()
     },
-  }
+  },
 }
 </script>
