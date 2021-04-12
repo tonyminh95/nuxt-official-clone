@@ -15,7 +15,33 @@
       dependencies to your project:
     </p>
 
-    <box-tab></box-tab>
+    <tabs-installation>
+      <template slot="yarn">
+        <div class="py-2">
+          <span class="text-purple-400">yarn add</span>
+          <span class="text-gray-300">--exact @nuxtjs/auth-next</span>
+        </div>
+        <div class="py-2">
+          <span class="text-purple-400">yarn add</span>
+          <span class="text-gray-300">@nuxtjs/axios</span>
+        </div>
+      </template>
+
+      <template slot="npm">
+        <div class="py-2">
+          <span class="text-purple-400">npm install </span>
+          <span class="text-gray-300">--save-exact @nuxtjs/auth-next</span>
+        </div>
+        <div class="py-2">
+          <span class="text-purple-400">npm install</span>
+          <span class="text-gray-300">@nuxtjs/axios</span>
+        </div>
+      </template>
+    </tabs-installation>
+
+    Bui Dang minh
+
+    <!-- <box-tab></box-tab>
 
     <BaseTabs class="mt-6" :tabs="['yarn', 'npm']">
       <template slot="yarn">
@@ -70,17 +96,13 @@
 
     <h2 id="typescript" class="capitalize text-xl mt-5">
       Using with TypeScript
-    </h2>
+    </h2> -->
   </div>
 </template>
 
 <script>
 export default {
   layout: 'auth',
-
-  created() {
-    console.log(this.$auth.loggedIn)
-  },
 
   methods: {
     scrollTo(position) {

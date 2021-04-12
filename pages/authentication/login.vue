@@ -46,15 +46,7 @@ export default {
   },
 
   methods: {
-    async handleSignIn() {
-      try {
-        const response = await this.$axios.post('schedule/tenant/upsert', {})
-
-        console.log(response)
-      } catch (error) {
-        console.log(error)
-      }
-    },
+    async handleSignIn() {},
   },
 }
 </script>

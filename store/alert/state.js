@@ -1,5 +1,5 @@
-export default {
+export default () => ({
   type: '',
   content: '',
   isShow: false,
-}
+})
